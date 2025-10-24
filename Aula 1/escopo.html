@@ -28,10 +28,22 @@
     <p>Este é um parágrafo de texto.</p>
     <script>
         
-        //window.alert("Bem vindo ao curso de JavaScript")  //comando que aparece uma notifidação o qual so aparece um 'OK'
         //window.confirm("Esta gostando da pagina?")// comando que aparece uma notifidação o qual tem as opções 'OK' e 'CANCELAR'(alternativas)
-        //window.prompt("Qual o seu nome?")// comando que aparece uma notifidação o qual tem um campo para escrever algo(ou seja, recebe algo)
+        //var nome_recebido = window.prompt("Qual o seu nome?")// comando que aparece uma notifidação o qual tem um campo para escrever algo(ou seja, recebe algo)
+        //window.alert("Bem vindo a pagina, " + nome_recebido)  //comando que aparece uma notifidação o qual so aparece um 'OK'
+                                    //concatenação de string com variável '+'
+        
 
+        var n1 = window.prompt("Digite um numero: ")
+        var n2 = window.prompt("Digite outro numero: ")
+        var soma = Number(n1) + Number(n2) //conversão de string para número com 'Number()'
+        window.alert("A soma entre " + n1 + " e " + n2 + " é igual a " + soma)
+
+        //outro jeito de converter string para número é com 'parseInt()' ou 'parseFloat()'
+        //parseInt() para números inteiros
+        //parseFloat() para números decimais
+        Number.parseFloat(n1)
+        Number.parseInt(n2)
     </script>
     
 </body>
