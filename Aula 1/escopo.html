@@ -39,7 +39,7 @@
         var soma = Number(n1) + Number(n2) //conversão de string para número com 'Number()'
         window.alert("A soma entre " + n1 + " e " + n2 + " é igual a " + soma)
         //ou
-        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) //usando template string (crase ``)
+        //window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) //usando template string (crase ``)
 
         //outro jeito de converter string para número é com 'parseInt()' ou 'parseFloat()'
             //parseInt() para números inteiros
@@ -47,6 +47,10 @@
         /*Number.parseFloat(n1)
         Number.parseInt(n2)
         var soma = n1 + n2*/
+
+        var nome =window.prompt("Qual o seu nome?")
+        document.write(`Ola ${nome},    seu nome tem ${nome.length} letras <br/>`);
+        document.write(`Seu nome em maiusculas é <strong> ${nome.toUpperCase()} <strong/> <br/>`);
     </script>
     
 </body>
