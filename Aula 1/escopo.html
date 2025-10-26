@@ -34,10 +34,10 @@
                                     //concatenação de string com variável '+'
         
 
-        var n1 = window.prompt("Digite um numero: ")
-        var n2 = window.prompt("Digite outro numero: ")
-        var soma = Number(n1) + Number(n2) //conversão de string para número com 'Number()'
-        window.alert("A soma entre " + n1 + " e " + n2 + " é igual a " + soma)
+        //var n1 = window.prompt("Digite um numero: ")
+        //var n2 = window.prompt("Digite outro numero: ")
+        //var soma = Number(n1) + Number(n2) //conversão de string para número com 'Number()'
+        //window.alert("A soma entre " + n1 + " e " + n2 + " é igual a " + soma)
         //ou
         //window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) //usando template string (crase ``)
 
@@ -51,7 +51,13 @@
         var nome =window.prompt("Qual o seu nome?")
         document.write(`Ola ${nome},    seu nome tem ${nome.length} letras <br/>`);
         document.write(`Seu nome em maiusculas é <strong> ${nome.toUpperCase()} <strong/> <br/>`);
-    </script>
+
+        var idade = window.prompt("Me diga sua idade:")
+        Number(idade) >= 18 ?document.write(`<br/> ${nome}, seu <strong> Acesso foi liberado</strong>  <br/>`):document.write(`<br/> ${nome} seu <strong> Acesso foi negado </strong> <br/>`);
+   
+   
+   </script>
+
     
 </body>
 </html>
