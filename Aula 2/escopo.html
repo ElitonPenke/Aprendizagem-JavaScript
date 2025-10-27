@@ -18,14 +18,39 @@
 <body>
     <h1>Teste com DOM</h1>
     <p>Aprendendo a usar o <strong>DOM</strong> em Javascrpit</p>
-    <div>Clique aqui</div>
+    <div id ="meuDiv">Clique aqui</div>
     <script>
+
+        /*  .innerText = pega e modifica o texto da propriedade
+            .innerHTML = pega e modifica toda a estrutura HTML da propriedade
+            .style = modifica o css do elemnto em questão
+        */
+
+
+
+
+        //conseeguindo os elemntos por MARCA
         var p1 = window.document.getElementsByTagName('p')[0] // seleciona o primeiro elemento <p>
         window.document.write('O texto da primeira tag p é: <br>' + p1.innerText + '<br>') // escreve o texto do elemento <p> com o innertext
         p1.style.color = 'blue' // altera a cor do texto do elemento <p> para azul atravez do javascript
         //para pegar toda a estrutura do html sendo o strong e etc
         window.document.write('<br> O texto da primeira tag p é: <br>' + p1.innerHTML + '<br>') // escreve o texto do elemento <p> com o innerHTML
         //alterando o conteúdo do elemento <p>
-  </script>
+
+
+
+        //conseguindo os elemntos por ID
+        var d = window.document.getElementById('meuDiv') // seleciona o elemento com o ID 'meuDiv'
+        d.style.width = '300px' // define a largura do elemento
+        d.innerText = 'Texto adicionado via JavaScript' // altera o texto do elemento
+        d.style.backgroundColor = 'lightblue' // define a cor de fundo do elemento
+
+        //conseguindo os elemntos por SELETOR (mais recomendado)
+        //querySelector pega o primeiro elemento que encontrar
+        //querySelectorAll pega todos os elementos que encontrar
+
+        var d2 = window.document.querySelector('#meuDiv') // seleciona o elemento com o ID 'meuDiv', é com # por ser id, ou se for classe é com .
+        d2.style.color = 'red' // altera a cor do texto do elemento para vermelho
+   </script>
 </body>
 </html>
