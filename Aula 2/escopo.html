@@ -19,6 +19,7 @@
     <h1>Teste com DOM</h1>
     <p>Aprendendo a usar o <strong>DOM</strong> em Javascrpit</p>
     <div id ="meuDiv">Clique aqui</div>
+    <div id="SEGUNDA_DIV">Texto inicial para testes</div>
     <script>
 
         /*  .innerText = pega e modifica o texto da propriedade
@@ -51,6 +52,14 @@
 
         var d2 = window.document.querySelector('#meuDiv') // seleciona o elemento com o ID 'meuDiv', é com # por ser id, ou se for classe é com .
         d2.style.color = 'red' // altera a cor do texto do elemento para vermelho
+        
+        //quero pegar uma variavel existente e mudar ela como eu quero
+        
+        var nova_div = window.document.getElementById("SEGUNDA_DIV")
+        nova_div.innerText="novo texto adicionado atraves do javascript"// se quisese mudar o texto com espaço, quebras de linhas, negrito, teria que ser i innerHTML
+  
+  
+  
     </script>
 
     <button onclick="window.alert('Você clicou no botão!')">clique aqui e veja a magica</button>

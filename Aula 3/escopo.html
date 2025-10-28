@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JavaScript</title>
+</head>
+<body>
+    <h1>Praticando JavaScript</h1>
+    <div id ="text">Primeiro texto da pagina</div>
+    <div id="area_de_manipulação"> Interaja</div>
+    <style>
+        body{
+            text-align: center;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.574);
+            color: white;
+            font-size: 20px;
+        }
+        #text{
+            margin-top: 20px;
+            padding: 10px;
+        }
+        div#area_de_manipulação{
+            color: black;
+            padding:3rem ;
+            background-color: rgba(0, 0, 0, 0.155);
+           
+            margin: 0 auto; /*para alinha a div no centro*/
+            
+            border: 2px solid white;
+            border-radius: 30px;
+            height: 1rem;
+            width: 10rem;
+            align-items: center;
+        }
+    </style>
+
+    <script>
+        var texto_alterado=window.document.getElementById("text")
+        texto_alterado.innerText="Texto alterado com sucesso!"
+    </script>
+</body>
+</html>
