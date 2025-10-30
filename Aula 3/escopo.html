@@ -8,12 +8,16 @@
 <body>
     <h1>Praticando JavaScript</h1>
     <div id ="text">Primeiro texto da pagina</div>
-    <div id="area_de_manipulação"> Interaja</div>
-    <style>
+
+    
+<div id="area_de_manipulação" onclick="clicar()"> Interaja</div>
+<div id ="outro_area_De_manipulacao" onmouseenter="entrar_no_bloco()" onmouseout="sair()"> Coloque o mouse em cima!</div>
+
+<style>
         body{
             text-align: center;
             padding: 2rem;
-            background-color: rgba(0, 0, 0, 0.574);
+            background-color: rgba(38, 130, 153, 0.521);
             color: white;
             font-size: 20px;
         }
@@ -21,24 +25,44 @@
             margin-top: 20px;
             padding: 10px;
         }
-        div#area_de_manipulação{
+        #area_de_manipulação{
             color: black;
-            padding:3rem ;
-            background-color: rgba(0, 0, 0, 0.155);
-           
+            padding: 3rem;
+            background-color: rgba(0, 0, 0, 0.155);          
             margin: 0 auto; /*para alinha a div no centro*/
-            
             border: 2px solid white;
             border-radius: 30px;
             height: 1rem;
             width: 10rem;
             align-items: center;
         }
+        #outro_area_De_manipulacao{
+            margin-top: 2rem;
+            color: black;
+            padding: 3rem;
+            border: 2px solid white;
+            border-radius: 30px;
+            background-color: rgba(0, 0, 0, 0.155);
+        }   
     </style>
 
     <script>
         var texto_alterado=window.document.getElementById("text")
         texto_alterado.innerText="Texto alterado com sucesso!"
-    </script>
+
+//aqui conseguimos pegar e quardar o elemento em uma variavel para manipula-la em js
+        var a = window.document.getElementById("area_de_manipulação")
+        var b = window.document.getElementById("outro_area_De_manipulacao")
+
+        function clicar(){
+            a.innerHTML="você clicou em mim!"
+        }
+        function entrar_no_bloco(){
+            b.innerHTML="Você entrou na área de manipulação!"
+        }
+        function sair(){
+            b.innerHTML="Clique aqui e veja a magia!"
+        }
+            </script>
 </body>
 </html>
