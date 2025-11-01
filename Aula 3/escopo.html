@@ -10,8 +10,8 @@
     <div id ="text">Primeiro texto da pagina</div>
 
     
-<div id="area_de_manipulação" onclick="clicar()"> Interaja</div>
-<div id ="outro_area_De_manipulacao" onmouseenter="entrar_no_bloco()" onmouseout="sair()"> Coloque o mouse em cima!</div>
+<div id="area_de_manipulação"> Interaja</div>
+<div id ="outro_area_De_manipulacao"> Coloque o mouse em cima!</div>
 
 <style>
         body{
@@ -54,14 +54,22 @@
         var a = window.document.getElementById("area_de_manipulação")
         var b = window.document.getElementById("outro_area_De_manipulacao")
 
+//funções para manipular eventos
+        a.addEventListener('click', clicar)
+        b.addEventListener('mouseenter',entrar_no_bloco)
+        b.addEventListener('mouseout',sair)
+
+
+
         function clicar(){
             a.innerHTML="você clicou em mim!"
+            a.style.backgroundColor="rgba(255, 255, 255, 0.521)"
         }
         function entrar_no_bloco(){
             b.innerHTML="Você entrou na área de manipulação!"
         }
         function sair(){
-            b.innerHTML="Clique aqui e veja a magia!"
+            b.innerHTML="Entre com o mouse aqui e veja a magia!"
         }
             </script>
 </body>
