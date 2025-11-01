@@ -75,11 +75,12 @@
             kms=Number(velocidade_carro.value)   //converte text para numero(precisa ser dentro da função para atualizar o valor toda vez que clicar)
             if (kms > 100) {
                 var multa =(kms-100)*5
-                r.innerText = `Multado em ${multa}reais! Você excedeu o limite permitido que é de 100 Km/h.`
-
+                r.innerText = `Multado em ${multa} reais! Você excedeu o limite permitido que é de 100 Km/h.`
+                r.style.color = 'red';
+                r.innerHTML +='<br><p>Passe no DETRAN para pagar a multa!</p>';
             } else {
                 r.innerText = `Tudo OK! Você está dentro do limite de velocidade.`
-
+                r.style.color = 'green'
             }
         }
     </script>
