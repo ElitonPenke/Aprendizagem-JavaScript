@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="texto1" id="texto1">
+    <h2>+</h2>
+    <input type="number" name="texto2" id="texto2">
+    <input type="button" value="Somar" onclick="Somar()">
+    <div id="id_resultado"><br>Resultado</div>
+
+    <script>
+        var resultado_tela=window.document.getElementById('id_resultado')
+
+
+        function Somar(){
+            var texto_1=window.document.getElementById("texto1")
+            var texto_2=window.document.querySelector('input#texto2') //pode ser dos dois jeitos
+            var n1 =Number(texto_1.value)
+            var n2 =Number(texto_2.value) //conversão de numeros
+            var resultado =n1 + n2
+
+            resultado_tela.innerHTML= `</br>O resultado deu ${resultado}.`
+
+        }
+    </script>
+</body>
+</html>
