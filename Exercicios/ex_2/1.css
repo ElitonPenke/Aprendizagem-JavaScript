@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e3f2fd; 
+    color: #333;
+
+    /* Centraliza todo o conteúdo na tela */
+    display: flex;
+    flex-direction: column; /* Empilha os blocos verticalmente */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Altura total da tela */
+    margin: 0;
+}
+
+/* --- Estilo do "Card" Principal --- */
+/* Isso afetará AMBOS os seus <div> (o formulário e a resposta) */
+div {
+    background: #ffffff; /* Fundo branco para o card */
+    padding: 25px;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 320px; /* Largura fixa */
+}
+
+/* --- Estilo específico para o Bloco de Resposta --- */
+#res {
+    /* Adiciona um espaço entre o card do formulário e o card de resposta */
+    margin-top: 20px; 
+    text-align: center; /* Centraliza o texto da resposta */
+    font-size: 1.1em;
+    font-weight: bold;
+    /* A resposta começa "vazia" de forma elegante */
+    min-height: 50px; 
+}
+
+/* --- Estilização dos Elementos do Formulário --- */
+
+/* Parágrafos dentro do formulário */
+p {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+/* Caixa de texto para o ano */
+#textodoano {
+    width: 80px; /* Tamanho bom para 4 dígitos */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+/* Espaçamento das etiquetas (labels) dos radios */
+label {
+    margin-left: 5px;
+    margin-right: 15px; /* Espaça "Masculino" de "Feminino" */
+}
+
+/* Botão "Verificar" */
+input[type="button"] {
+    background-color: #007bff; /* Cor primária (azul) */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    
+    /* Faz o botão ocupar 100% da largura do card */
+    width: 100%; 
+    
+    /* Efeito suave de transição */
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+input[type="button"]:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
