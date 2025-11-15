@@ -1,0 +1,39 @@
+body{
+    font-size: 1.3rem;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgba(35, 57, 167, 0.397);
+}
+
+header{
+text-align: center;
+padding: 2rem;
+color: white;
+}
+
+section{
+    background-color: white;
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.139);
+    padding: 1rem;
+    border-radius: 15px;
+    width:80% ;
+    margin:auto /*centraliza o sction na tela*/
+    
+}
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+#botão input{
+       /* Cor de fundo */
+        background-color: rgba(35, 57, 167, 0.397);; 
+        /* Cor do texto */
+        color: white; 
+        /* Preenchimento (espaçamento interno) */
+        padding: 10px 20px; 
+        /* Remover a borda padrão */
+        border: none; 
+        /* Arredondar os cantos */
+        border-radius: 8px;  
+        /* Tamanho da fonte */
+        font-size: 16px;
+}
